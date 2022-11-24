@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.6.0'
+    ext {
+        chaosleungVersion = '1.4.4'
+        appCompact = '1.4.0'
+        material = '1.4.0'
+        constraintlayout = '2.1.3'
+        lifeCycle = '2.4.1'
+        firebaseMessaging = '23.0.1'
+        ccp = '2.5.3'
+        circularImageView = '3.1.0'
+        glide = '4.12.0'
+        retrofit = '2.9.0'
+        koin = '2.1.6'
+        cropper = '3.2.2'
+        firebaseAuth = "28.4.1"
+        browser = "1.4.0"
+        ripple = "1.0.1"
+        chips = "1.0.8"
+        coroutines = "1.5.1"
+        navigation = "2.4.1"
+        legacySupport = '1.0.0'
+        validation = '0.5.2'
+        logging = '4.9.0'
+        scalars = '2.6.1'
+        gson = '2.8.9'
+        espresso = '3.4.0'
+        junitTest = '1.1.3'
+        //2.2.1
+        room_version = "2.4.2"
+        junit = '4.13.2'
+        ktxCore = '1.7.0'
+        roomPersistence = '1.1.1'
+        permission = '3.8'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+plugins {
+    id 'com.android.application' version '7.3.1' apply false
+    id 'com.android.library' version '7.3.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.20' apply false
+}
